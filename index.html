@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <style>
+        input[type="button"]{
+            text-align: center;
+            width: 100px;
+            height:50px;
+        }
+    </style>
+    <script>
+        function off(){
+            console.log("OFF")
+            document.getElementById("main").style.backgroundColor="black"
+            document.getElementById("txt").innerText="LIGHT OFF"
+            document.getElementById("txt").style.color="WHITE"
+            document.getElementById("glary2").src="ob.png"
+            document.getElementById("glary1").src="ob.png"
+            document.getElementById("glary").src="ob.png"
+            document.getElementById("glary3").src="ob.png"
+            document.getElementById("glary4").src="ob.png"
+            document.getElementById("glary5").src="ob.png"
+         
+            
+
+        }
+
+        function onfu(){
+            document.getElementById("main").style.backgroundColor="blue"
+            document.getElementById("txt").innerText="LIGHT ON"
+            document.getElementById("txt").style.color="yellow"
+            console.log("ON")
+            document.getElementById("glary1").src="yb.png"
+            document.getElementById("glary2").src="rb.png"
+            document.getElementById("glary").src="gb.png"
+            document.getElementById("glary3").src="gpb.png"
+            document.getElementById("glary4").src="ogb.png"
+            document.getElementById("glary5").src="pb.png"
+            
+            
+
+
+           
+        }
+    </script>
+</head>
+<body>
+    
+    <div class="container-fluid" id="main" style="height: 100%;background-color: black;">
+        <div class="row">
+            <div class="col col-lg-12 text-center col-md-12 col-sm-12 col-12 " >
+                <H1  id="txt" style="color: white;text-shadow: 3px 3px red;" >LIGHT OFF</H1>
+            </div>
+        </div>
+        <div class="row" >
+        
+            <div class="col col-lg-2 col-sm-4 col-6 col-md-3"  >
+                <img src="ob.png" height="200px" id="glary" >
+            </div>
+            <div class="col col-lg-2 col-sm-4 col-6 col-md-3">
+                <img src="ob.png" height="200px" id="glary1" >
+            </div>
+            <div class="col col-lg-2 col-sm-4 col-6 col-md-3">
+                <img src="ob.png" height="200px" id="glary2" >
+            </div>
+            <div class="col col-lg-2 col-sm-4 col-6 col-md-3">
+                <img src="ob.png" height="200px" id="glary3" >
+            </div>
+            <div class="col col-lg-2 col-sm-4 col-6 col-md-3">
+                <img src="ob.png" height="200px" id="glary4" >
+            </div>
+            <div class="col col-lg-2 col-sm-4 col-6 col-md-3">
+                <img src="ob.png" height="200px" id="glary5" >
+            </div>
+
+        </div>
+        <br>
+        <br>
+        <br><br>
+        <div class="row">
+            <div class="col col-lg-5"></div>
+            <div class="col col-lg-1">
+                <input type="button" value="On" onclick="onfu()" style="background-image: linear-gradient(red,yellow);border-radius: 20px;">
+            </div>
+            <div class="col col-lg-1">
+                <input type="button" value="OFF"  onclick="off()" style="background-image: linear-gradient(red,yellow);border-radius: 20px;" >
+            </div>
+        </div>
+        <br>
+        <br><br>
+        <br>
+        <br><br>
+        <br>
+        <br><br><br>
+        
+        </div>
+       
+    </div>
+    
+
+   
+    <!-- <div id="main" style="background-color: black;height: 1000px;">
+   
+    
+     
+     
+     
+    <br>
+    
+    
+</div> -->
+
+</body>
+</html>
